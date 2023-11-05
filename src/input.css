@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 200;
+    src: local('Poppins Extralight'), local('Poppins-Extralight'),
+      url('./fonts/poppins-extralight-webfont.woff') format('woff'),
+      url('./fonts/poppins-extralight-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+        url('./fonts/poppins-regular-webfont.woff') format('woff'),
+        url('./fonts/poppins-regular-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: local('Poppins Semibold'), local('Poppins-Semibold'),
+        url('./fonts/poppins-semibold-webfont.woff') format('woff'),
+        url('./fonts/poppins-semibold-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+  
+  
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +38,11 @@
 }
 
 @layer components {
+
+    .p-card {
+        padding: 33px 32px 32px 32px;
+    }
+
     .shadow-default {
         box-shadow: 0rem 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 0.5);
     }

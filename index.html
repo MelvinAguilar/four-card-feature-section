@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Melvin Aguilar" />
+    <meta name="description"
+      content="Frontend Mentor | Stats preview card component" />
+    <meta name="theme-color" content="#fff" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="./output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
     />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
-  <!-- grid min-h-screen place-content-center -->
-  <body class="py-[5rem] px-[1.875rem]">
+  <body class="grid min-h-screen place-content-center p-4 md:p-8">
     <main class="flex flex-col items-center gap-[1.0625rem]">
       <h1
-        class="text-[2.25rem] font-extralight text-center max-w-[25ch] tracking-[0.004em] leading-[1.4] text-very-dark-blue"
+        class="text-[2.25rem] font-extralight text-center max-w-[25ch] tracking-[0.004em] leading-[1.45] text-very-dark-blue"
       >
         Reliable, efficient delivery
         <span class="text-[2.25rem] font-semibold">Powered by Technology </span>
@@ -36,14 +38,14 @@
         points to ensure that your project is successful
       </p>
       <ul role="list"
-        class="grid pt-[2.9375rem] mx-auto max-w-[21.875rem] lg:items-center md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem] md:max-w-[69.375rem]"
+        class="grid pt-11 mx-auto max-w-[21.875rem] lg:items-center md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem] md:max-w-[69.375rem]"
       >
         <li role="listitem"
-          class="p-[2rem] relative shadow-default border-top border-top-cyan rounded-lg overflow-hidden lg:row-span-2"
+          class="p-card relative shadow-default border-top border-top-cyan rounded-lg overflow-hidden lg:row-span-2"
         >
           <h2 class="text-xl text-very-dark-blue font-semibold">Supervisor</h2>
           <p
-            class="leading-[1.4375rem] text-grayish-blue mt-[0.5rem] text-[0.8125rem] tracking-[0.006em]"
+            class="leading-[1.4375rem] text-grayish-blue mt-[7px] text-paragraph tracking-[0.006em]"
           >
             Monitors activity to identify project roadblocks
           </p>
@@ -52,17 +54,17 @@
             alt=""
             width="64"
             height="64"
-            class="mt-[2.5rem] ml-auto"
+            class="mt-10 ml-auto"
           />
         </li>
         <li role="listitem"
-          class="p-[2rem] relative shadow-default border-top border-top-red rounded-lg overflow-hidden"
+          class="p-card relative shadow-default border-top border-top-red rounded-lg overflow-hidden"
         >
           <h2 class="text-xl text-very-dark-blue font-semibold">
             Team Builder
           </h2>
           <p
-            class="leading-[1.4375rem] text-grayish-blue mt-[0.5rem] text-[0.8125rem] tracking-[0.006em]"
+            class="leading-[1.4375rem] text-grayish-blue mt-[7px] text-paragraph tracking-[0.006em]"
           >
             Scans our talent network to create the optimal team for your project
           </p>
@@ -71,15 +73,15 @@
             alt=""
             width="64"
             height="64"
-            class="mt-[2.5rem] ml-auto"
+            class="mt-10 ml-auto"
           />
         </>
         <li role="listitem"
-          class="p-[2rem] relative shadow-default border-top border-top-orange rounded-lg overflow-hidden lg:order-2"
+          class="p-card relative shadow-default border-top border-top-orange rounded-lg overflow-hidden lg:order-2"
         >
           <h2 class="text-xl text-very-dark-blue font-semibold">Karma</h2>
           <p
-            class="leading-[1.4375rem] text-grayish-blue mt-[0.5rem] text-[0.8125rem] tracking-[0.006em]"
+            class="leading-[1.4375rem] text-grayish-blue mt-[7px] text-paragraph tracking-[0.006em]"
           >
             Regularly evaluates our talent to ensure quality
           </p>
@@ -88,15 +90,15 @@
             alt=""
             width="64"
             height="64"
-            class="mt-[2.5rem] ml-auto"
+            class="mt-10 ml-auto"
           />
         </>
         <li role="listitem"
-          class="p-[2rem] relative shadow-default border-top border-top-blue rounded-lg overflow-hidden lg:row-span-2"
+          class="p-card relative shadow-default border-top border-top-blue rounded-lg overflow-hidden lg:row-span-2"
         >
           <h2 class="text-xl text-very-dark-blue font-semibold">Calculator</h2>
           <p
-            class="leading-[1.4375rem] text-grayish-blue mt-[0.5rem] text-[0.8125rem] tracking-[0.006em]"
+            class="leading-[1.4375rem] text-grayish-blue mt-[7px] text-paragraph tracking-[0.006em]"
           >
             Uses data from past projects to provide better delivery estimates
           </p>
@@ -105,10 +107,20 @@
             alt=""
             width="64"
             height="64"
-            class="mt-[2.5rem] ml-auto"
+            class="mt-10 ml-auto"
           />
         </div>
       </ul>
     </main>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(function () {
+            console.log("Service Worker Registered");
+          });
+      }
+    </script>
   </body>
 </html>

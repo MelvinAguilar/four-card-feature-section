@@ -51,3 +51,7 @@ Users should be able to:
 
 - Frontend Mentor - [@melvinaguilar](https://www.frontendmentor.io/profile/melvinaguilar)
 - Linkedin: Melvin Aguilar - [Linkedin: Melvin Aguilar](https://www.linkedin.com/in/melvinaguilar)
+
+
+
+- [Tailwind CSS | Optimizing for Production](https://tailwindcss.com/docs/optimizing-for-production)

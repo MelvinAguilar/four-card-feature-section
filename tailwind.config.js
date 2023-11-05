@@ -12,6 +12,9 @@ module.exports = {
         "grayish-blue": "hsl(229, 6%, 66%)",
         "very-light-gray": "hsl(0, 0%, 98%)",
       },
+      fontSize: {
+        paragraph: "0.8125rem",
+      },
     },
   },
   plugins: [],
