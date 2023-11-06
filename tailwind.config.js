@@ -9,7 +9,7 @@ module.exports = {
         orange: "hsl(34, 97%, 64%)",
         blue: "hsl(212, 86%, 64%)",
         "very-dark-blue": "hsl(234, 12%, 34%)",
-        "grayish-blue": "hsl(229, 6%, 66%)",
+        "grayish-blue": "hsl(227, 6%, 32%)",
         "very-light-gray": "hsl(0, 0%, 98%)",
       },
       fontSize: {
